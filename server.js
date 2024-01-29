@@ -16,7 +16,7 @@ app.post('/convert', multer({dest: 'uploads/'}).single('file'), (req, res) => {
         const matches = rawData.match(regex);
 
         if (!matches || matches.length % 5 !== 0) {
-            throw new Error('Неверный формат данных в файле.');
+            throw new Error('Невірний формат даних у файлі.');
         }
 
         const frames = [];
@@ -25,7 +25,7 @@ app.post('/convert', multer({dest: 'uploads/'}).single('file'), (req, res) => {
             const [filename, x, y, w, h] = matches.slice(i, i + 5).map(match => match.split(":")[1].trim());
 
             if (!filename || !x || !y || !w || !h) {
-                throw new Error('Отсутствуют необходимые значения.');
+                throw new Error('Немає необхідних значень.');
             }
 
             frames.push({
