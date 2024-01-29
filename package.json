@@ -1,0 +1,24 @@
+{
+  "name": "file-converter",
+  "version": "1.0.0",
+  "description": "File Converter with Web Interface",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.6.0",
+    "multer": "^1.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-loader": "^9.1.3",
+    "html-loader": "^5.0.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
